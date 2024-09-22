@@ -49,15 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // Inicializa o botão
+        // botão de fechar
         btnFecharApp = findViewById(R.id.btn_fecharapp);
 
         // Define a ação do botão para fechar o app
         btnFecharApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Fecha o aplicativo
-                finishAffinity();  // Finaliza todas as atividades e fecha o app
+                // Fechar o aplicativo
+                finishAffinity();  // Finalizar todas as atividades e fechar o app
             }
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
